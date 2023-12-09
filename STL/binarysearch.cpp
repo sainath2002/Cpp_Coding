@@ -8,6 +8,13 @@ int main()
     ele.push_back(3);
     ele.push_back(0);
     ele.push_back(8);
+    for(auto it=ele.begin();it!=ele.end();it++)
+    cout<<*it<<" ";
+    cout<<"\n";
+    cout<< next_permutation(ele.begin(),ele.end())<<"\n"; //returns 1 if next permutation exists else 0
+    for(auto it=ele.begin();it!=ele.end();it++)
+    cout<<*it<<" ";
+    cout<<"\n";
     sort(ele.begin(),ele.end());
     for(auto it=ele.begin();it!=ele.end();it++)
     cout<<*it<<" ";
